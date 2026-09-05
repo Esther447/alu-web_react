@@ -1,4 +1,5 @@
 const path = require('path');
+
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
@@ -39,12 +40,14 @@ module.exports = {
 
   plugins: [
     new CleanWebpackPlugin(),
+
     new HtmlWebpackPlugin({
       title: 'Holberton Dashboard',
     }),
   ],
 
   devServer: {
+    // Dev server serves files from ./public
     port: 8564,
     open: true,
     static: {
