@@ -1,3 +1,20 @@
 node_modules/
 dist/
 *.log
+
+# Task 0
+!Webpack/task_0/dist/
+!Webpack/task_0/dist/index.html
+Webpack/task_0/dist/main.js
+
+# Task 1
+Webpack/task_1/public/bundle.js
+Webpack/task_1/public/bundle.js.LICENSE.txt
+
+# Task 2
+Webpack/task_2/public/bundle.js
+Webpack/task_2/public/bundle.js.LICENSE.txt
+Webpack/task_2/public/*.jpg
+
+# Task 3
+Webpack/task_3/public/
