@@ -1,12 +1,14 @@
-# ALU Web React - TypeScript
+# ALU Webpack Project
 
-This project contains TypeScript tasks completed for the ALU Web React curriculum.
+This project contains the Webpack tasks completed for the ALU Software Engineering curriculum.
 
 ## Tasks
 
-- task_0: Student interface and Vanilla JavaScript rendering
-- task_1: Teacher interface and classes
-- task_2: Interfaces, classes, type predicates, and functions
-- task_3: Ambient namespaces and CRUD
-- task_4: Namespaces and declaration merging
-- task_5: Nominal typing with branded interfaces
+- Task 0: Basic Webpack setup
+- Task 1: Learning Webpack configuration
+- Task 2: Adding CSS and images
+- Task 3: Dev servers, modules, and tree shaking
+
+## Author
+
+Esther Mushimiyimana
