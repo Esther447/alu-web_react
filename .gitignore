@@ -20,3 +20,4 @@ Webpack/task_2/public/*.jpg
 Webpack/task_3/public/
 Webpack/task_0/dist/main.js
 Webpack/task_0/dist/main.js
+node_modules/
