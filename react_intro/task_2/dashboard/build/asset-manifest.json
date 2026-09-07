@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2052fd60.css",
+    "main.js": "/static/js/main.bb9dd61e.js",
+    "static/media/holberton-logo.jpg": "/static/media/holberton-logo.24bab5d633e36ca8d17e.jpg",
+    "index.html": "/index.html",
+    "main.2052fd60.css.map": "/static/css/main.2052fd60.css.map",
+    "main.bb9dd61e.js.map": "/static/js/main.bb9dd61e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2052fd60.css",
+    "static/js/main.bb9dd61e.js"
+  ]
+}
