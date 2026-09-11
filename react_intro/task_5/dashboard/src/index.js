@@ -1,4 +1,7 @@
-import './style.css';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App/App';
+import Notifications from './Notifications/Notifications';
 
-const root = document.getElementById('root');
-root.innerHTML = '<h1>Dashboard</h1>';
+ReactDOM.render(<Notifications />, document.getElementById('root-notifications'));
+ReactDOM.render(<App />, document.getElementById('root'));
