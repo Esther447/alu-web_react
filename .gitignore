@@ -4,6 +4,8 @@ dist/
 react_intro/task_1/dashboard/build/
 react_intro/task_2/dashboard/build/
 react_intro/task_3/dashboard/build/
+react_intro/task_4/dashboard/build/
+!react_intro/task_5/dashboard/dist/index.html
 
 # Task 0
 !Webpack/task_0/dist/
