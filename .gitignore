@@ -1,6 +1,9 @@
 node_modules/
 dist/
 *.log
+react_intro/task_1/dashboard/build/
+react_intro/task_2/dashboard/build/
+react_intro/task_3/dashboard/build/
 
 # Task 0
 !Webpack/task_0/dist/
