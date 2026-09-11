@@ -1,5 +1,6 @@
 node_modules/
 dist/
+!dist/index.html
 *.log
 react_intro/task_1/dashboard/build/
 react_intro/task_2/dashboard/build/
