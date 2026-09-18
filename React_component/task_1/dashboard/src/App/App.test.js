@@ -68,4 +68,16 @@ describe('App', () => {
     expect(logOut).toHaveBeenCalled();
     alertMock.mockRestore();
   });
+
+  it('does not call logOut after component is unmounted', () => {
+    const logOut = jest.fn();
+    const alertMock = jest.spyOn(window, 'alert').mockImplementation(() => {});
+    wrapper = shallow(<App logOut={logOut} />);
+    wrapper.unmount();
+    wrapper = null;
+    const event = new KeyboardEvent('keydown', { ctrlKey: true, key: 'h' });
+    window.dispatchEvent(event);
+    expect(logOut).not.toHaveBeenCalled();
+    alertMock.mockRestore();
+  });
 });
