@@ -1,7 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import { StyleSheetTestUtils } from 'aphrodite';
 import CourseList from './CourseList';
 import CourseListRow from './CourseListRow';
+
+beforeEach(() => StyleSheetTestUtils.suppressStyleInjection());
+afterEach(() => StyleSheetTestUtils.clearBufferAndResumeStyleInjection());
 
 describe('CourseList', () => {
   describe('With CourseList Empty', () => {

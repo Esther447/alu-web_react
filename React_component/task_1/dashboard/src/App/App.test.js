@@ -1,6 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import { StyleSheetTestUtils } from 'aphrodite';
 import App from './App';
+
+beforeEach(() => StyleSheetTestUtils.suppressStyleInjection());
+afterEach(() => StyleSheetTestUtils.clearBufferAndResumeStyleInjection());
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import Login from '../Login/Login';
