@@ -3,9 +3,14 @@ import { shallow } from 'enzyme';
 import CourseListRow from './CourseListRow';
 
 describe('CourseListRow Component', () => {
+  it('renders without crashing', () => {
+    const wrapper = shallow(<CourseListRow textFirstCell="First cell" />);
+    expect(wrapper.exists()).toBe(true);
+  });
+
   it('renders one cell with colSpan 2 when isHeader is true and textSecondCell is null', () => {
     const wrapper = shallow(
-      <CourseListRow isHeader={true} textFirstCell="Header" />
+      <CourseListRow isHeader={true} textFirstCell="Header" textSecondCell={null} />
     );
     expect(wrapper.find('th')).toHaveLength(1);
     expect(wrapper.find('th').prop('colSpan')).toEqual('2');
