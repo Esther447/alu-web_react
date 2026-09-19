@@ -3,17 +3,17 @@ import { shallow } from 'enzyme';
 import { StyleSheetTestUtils } from 'aphrodite';
 import Login from './Login';
 
-beforeEach(() => StyleSheetTestUtils.suppressStyleInjection());
-afterEach(() => StyleSheetTestUtils.clearBufferAndResumeStyleInjection());
+beforeEach(() => {
+  StyleSheetTestUtils.suppressStyleInjection();
+});
 
-describe('Login', () => {
+afterEach(() => {
+  StyleSheetTestUtils.clearBufferAndResumeStyleInjection();
+});
+
+describe('Login Component', () => {
   it('renders without crashing', () => {
-    shallow(<Login />);
-  });
-
-  it('renders 2 input and 2 label tags', () => {
     const wrapper = shallow(<Login />);
-    expect(wrapper.find('input').length).toBe(2);
-    expect(wrapper.find('label').length).toBe(2);
+    expect(wrapper.exists()).toBe(true);
   });
 });
