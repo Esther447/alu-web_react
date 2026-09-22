@@ -58,7 +58,7 @@ class Notifications extends React.Component {
   }
 
   render() {
-      const { displayDrawer, listNotifications, handleDisplayDrawer, handleHideDrawer } = this.props;
+    const { displayDrawer, listNotifications, handleDisplayDrawer, handleHideDrawer } = this.props;
     return (
       <>
         <div
