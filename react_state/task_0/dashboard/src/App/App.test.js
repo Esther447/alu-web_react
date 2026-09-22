@@ -49,11 +49,20 @@ describe('App', () => {
     wrapper.unmount();
   });
 
-  it('handleDisplayDrawer sets displayDrawer to true, handleHideDrawer sets it to false', () => {
+  it('handleDisplayDrawer sets displayDrawer to true', () => {
     const wrapper = shallow(<App />);
     wrapper.instance().handleDisplayDrawer();
+    wrapper.update();
     expect(wrapper.instance().state.displayDrawer).toBe(true);
+    wrapper.unmount();
+  });
+
+  it('handleHideDrawer sets displayDrawer to false', () => {
+    const wrapper = shallow(<App />);
+    wrapper.instance().handleDisplayDrawer();
+    wrapper.update();
     wrapper.instance().handleHideDrawer();
+    wrapper.update();
     expect(wrapper.instance().state.displayDrawer).toBe(false);
     wrapper.unmount();
   });
