@@ -1,6 +1,6 @@
 import { Seq } from 'immutable';
 
-export function printBestStudents(grades) {
+export default function printBestStudents(grades) {
   console.log(
     Seq(grades)
       .filter((student) => student.score >= 70)
