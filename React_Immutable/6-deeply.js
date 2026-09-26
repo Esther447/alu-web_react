@@ -1,5 +1,5 @@
 import { Map } from 'immutable';
 
-export function mergeDeeplyElements(page1, page2) {
-  return Map(page1).mergeDeep(page2).valueSeq().toList();
+export default function mergeDeeplyElements(page1, page2) {
+  return Map(page1).mergeDeep(page2);
 }
