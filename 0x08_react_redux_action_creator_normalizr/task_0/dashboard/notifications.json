@@ -1,0 +1,59 @@
+[
+  {
+    "id": "5debd764a7c57c7839d722e9",
+    "author": {
+      "id": "5debd764a7c57c7839d722e9",
+      "name": {
+        "first": "Poole",
+        "last": "Sanders"
+      },
+      "email": "poole.sanders@holberton.nz",
+      "picture": "http://placehold.it/32x32",
+      "age": 25
+    },
+    "context": {
+      "guid": "2d8e40be-1c78-4de0-afc9-fcc147afd4d2",
+      "isRead": true,
+      "type": "urgent",
+      "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+    }
+  },
+  {
+    "id": "5debd764a7c57c7839d722e9",
+    "author": {
+      "id": "5debd764a7c57c7839d722e9",
+      "name": {
+        "first": "Poole",
+        "last": "Sanders"
+      },
+      "email": "poole.sanders@holberton.nz",
+      "picture": "http://placehold.it/32x32",
+      "age": 25
+    },
+    "context": {
+      "guid": "280913fe-38dd-4abd-8ab6-acdb4105f922",
+      "isRead": false,
+      "type": "urgent",
+      "value": "Non diam phasellus vestibulum lorem sed risus ultricies. Tellus mauris a diam maecenas sed"
+    }
+  },
+  {
+    "id": "5debd764507v7c7839d722e9",
+    "author": {
+      "id": "5debd764507v7c7839d722e9",
+      "name": {
+        "first": "Anita",
+        "last": "Koch"
+      },
+      "email": "anita.koch@holberton.nz",
+      "picture": "http://placehold.it/32x32",
+      "age": 30
+    },
+    "context": {
+      "guid": "17e54f5a-56e5-4b04-9e3e-a4a6b8f7a7c5",
+      "isRead": false,
+      "type": "default",
+      "value": "Cursus risus at ultrices mi tempus imperdiet nulla malesuada."
+    }
+  }
+]

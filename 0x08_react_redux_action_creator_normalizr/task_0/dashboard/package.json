@@ -1,0 +1,52 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "webpack --config config/webpack.config.js",
+    "start": "webpack-dev-server --mode development --config config/webpack.config.js",
+    "test": "jest",
+    "test-watch": "jest --watch"
+  },
+  "jest": {
+    "setupFiles": [
+      "./config/setupTests.js"
+    ],
+    "testEnvironment": "jest-environment-jsdom",
+    "moduleNameMapper": {
+      "\\.(css|less)$": "identity-obj-proxy",
+      "\\.(jpg|jpeg|png|gif|svg|ico)$": "<rootDir>/config/fileMock.js"
+    },
+    "transform": {
+      "^.+\\.(js|jsx)$": "babel-jest"
+    }
+  },
+  "overrides": {
+    "cheerio": "1.0.0-rc.12"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.0",
+    "@babel/preset-env": "^7.12.0",
+    "@babel/preset-react": "^7.12.0",
+    "babel-jest": "^27.0.0",
+    "babel-loader": "^8.2.0",
+    "css-loader": "^5.2.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "file-loader": "^6.2.0",
+    "identity-obj-proxy": "^3.0.0",
+    "image-webpack-loader": "^7.0.1",
+    "jest": "^27.0.0",
+    "jest-environment-jsdom": "^27.0.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^4.9.0",
+    "webpack-dev-server": "^3.11.3"
+  },
+  "dependencies": {
+    "aphrodite": "^2.4.0",
+    "prop-types": "^15.7.2"
+  }
+}
