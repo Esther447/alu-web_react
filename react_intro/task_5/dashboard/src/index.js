@@ -1,4 +1,1 @@
-import './style.css';
-
-console.log('Webpack setup initialized');
-
+console.log('Webpack setup complete');
